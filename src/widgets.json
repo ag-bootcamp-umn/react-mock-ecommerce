@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Acme Widget 2000",
+    "price": 10,
+    "quantity": 10,
+    "_id": 1
+  },
+  {
+    "name": "Acme Widget 5000",
+    "price": 50,
+    "quantity": 20,
+    "_id": 2
+  },
+  {
+    "name": "Acme Widget 8000",
+    "price": 100,
+    "quantity": 5,
+    "_id": 3
+  }
+]
