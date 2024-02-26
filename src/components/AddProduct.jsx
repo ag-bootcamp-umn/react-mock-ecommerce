@@ -7,6 +7,9 @@ export default function AddProduct(props) {
   function addNewProduct(e) {
     e.preventDefault();
     console.log('newProduct', props.newProduct)
+    props.newProduct._id = props.products.length + 1;
+    props.newProduct.price = parseInt(props.newProduct.price)
+    props.newProduct.quantity = parseInt(props.newProduct.quantity)
     props.setProduct([...props.products, props.newProduct]);
     props.setNewProduct(props.defaultForm);
   }
@@ -32,7 +35,7 @@ export default function AddProduct(props) {
             Price
           </label>
           <input
-            type="text"
+            type="number"
             name="price"
             id="price"
             className="form-control"
@@ -45,7 +48,7 @@ export default function AddProduct(props) {
             Quantity
           </label>
           <input
-            type="text"
+            type="number"
             name="quantity"
             id="quantity"
             className="form-control"

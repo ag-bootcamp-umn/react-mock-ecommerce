@@ -23,10 +23,10 @@ function App() {
   //   console.log("p", products);
   // }, [products]);
 
-  // useEffect(() => {
-  //   const productData = checkForSavedData();
-  //   if (productData) setProduct(productData);
-  // }, []);
+  useEffect(() => {
+    const productData = checkForSavedData();
+    if (productData) setProduct(productData);
+  }, []);
 
   // useEffect( () => {
   //   console.log('new product', newProduct)

@@ -9,17 +9,19 @@ export default function Cart(props) {
   function clearCart() {
     const confirmation = confirm('Are you sure?')
     if (confirmation === true) {
-      const w2 = props.cart.filter(item => item._id === 1).length;
-      const w5 = props.cart.filter(item => item._id === 2).length;
-      const w8 = props.cart.filter(item => item._id === 3).length;
+      // const w2 = props.cart.filter(item => item._id === 1).length;
+      // const w5 = props.cart.filter(item => item._id === 2).length;
+      // const w8 = props.cart.filter(item => item._id === 3).length;
 
-      props.setProduct([...props.products],
-        props.products[0].quantity -= w2,
-        props.products[1].quantity -= w5,
-        props.products[2].quantity -= w8
-      );
-        localStorage.setItem('productData', JSON.stringify(props.products))
-      props.setCart([])
+      // props.setProduct([...props.products],
+      //   props.products[0].quantity -= w2,
+      //   props.products[1].quantity -= w5,
+      //   props.products[2].quantity -= w8
+      // );
+      //   localStorage.setItem('productData', JSON.stringify(props.products))
+      // props.setCart([])
+      console.log(props.cart)
+      console.log(props.products)
     } else {
       return;
     }
